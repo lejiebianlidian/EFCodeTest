@@ -18,7 +18,7 @@ namespace EF6WithMiniProfiler.Models
     public class BlogDetails
     {
         public DateTime? DateCreated { get; set; }
-
+          
         /// <summary>
         /// 通过标识列进行自定义列名、字段数据类型、字段长度等
         /// </summary>

@@ -19,7 +19,7 @@ namespace EF6WithMiniProfiler.Models
 
         [MaxLength(50, ErrorMessage = "BloggerName must be 50 characters or less"), MinLength(4)]
         public string BloggerName { get; set; }
-
+         
         /// <summary>
         /// 不映射到数据库中的字段需要设置标识[NotMapped]
         /// </summary>
