@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF6WithMiniProfiler", "EF6WithMiniProfiler\EF6WithMiniProfiler.csproj", "{B5DDD566-5AEB-4EF6-AE72-9688A023E4E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5DDD566-5AEB-4EF6-AE72-9688A023E4E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5DDD566-5AEB-4EF6-AE72-9688A023E4E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5DDD566-5AEB-4EF6-AE72-9688A023E4E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5DDD566-5AEB-4EF6-AE72-9688A023E4E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D3B5A12B-2D69-4F9B-BCEC-F4AC2C9110C8}
+	EndGlobalSection
+EndGlobal
