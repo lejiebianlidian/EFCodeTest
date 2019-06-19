@@ -24,7 +24,7 @@ namespace EF6WithMiniProfiler.Models
         /// </summary>
         [Column("BlogDescription", TypeName ="ntext"),MaxLength(250)]
         public string Description { get; set; } 
-
+         
 
     }
 }
