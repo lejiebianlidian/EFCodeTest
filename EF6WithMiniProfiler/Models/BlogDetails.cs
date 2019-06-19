@@ -23,7 +23,7 @@ namespace EF6WithMiniProfiler.Models
         /// 通过标识列进行自定义列名、字段数据类型、字段长度等
         /// </summary>
         [Column("BlogDescription", TypeName ="ntext"),MaxLength(250)]
-        public string Description { get; set; }
+        public string Description { get; set; } 
 
 
     }
