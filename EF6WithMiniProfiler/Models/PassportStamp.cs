@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
@@ -8,6 +9,7 @@ namespace EF6WithMiniProfiler.Models
 {
     public class PassportStamp
     {
+        [Key]
         public int StampId { get; set; }
         public DateTime Stamped { get; set; }
 

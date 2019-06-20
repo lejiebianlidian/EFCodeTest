@@ -152,11 +152,18 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\BlogDetails.cs" />
-    <Compile Include="Models\Bolg.cs" />
+    <Compile Include="Migrations\201906200802041_init.cs" />
+    <Compile Include="Migrations\201906200802041_init.Designer.cs">
+      <DependentUpon>201906200802041_init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\BlogDbContext.cs" />
+    <Compile Include="Models\BlogDetail.cs" />
+    <Compile Include="Models\Blog.cs" />
     <Compile Include="Models\Comment.cs" />
     <Compile Include="Models\Passport.cs" />
     <Compile Include="Models\PassportStamp.cs" />
+    <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Post.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -171,6 +178,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="说明.txt" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -212,6 +220,11 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201906200802041_init.resx">
+      <DependentUpon>201906200802041_init.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -96,4 +96,5 @@ F:\workspace-local\EFCodeTest\EF6WithMiniProfiler\bin\MiniProfiler.dll
 F:\workspace-local\EFCodeTest\EF6WithMiniProfiler\bin\MiniProfiler.Mvc5.dll
 F:\workspace-local\EFCodeTest\EF6WithMiniProfiler\bin\MiniProfiler.xml
 F:\workspace-local\EFCodeTest\EF6WithMiniProfiler\bin\MiniProfiler.Mvc5.xml
-F:\workspace-local\EFCodeTest\EF6WithMiniProfiler\obj\Debug\EF6WithMiniProfiler.csprojAssemblyReference.cache
+F:\workspace-local\EFCodeTest\EF6WithMiniProfiler\obj\Debug\EF6WithMiniProfiler.Migrations.init.resources
+F:\workspace-local\EFCodeTest\EF6WithMiniProfiler\obj\Debug\EF6WithMiniProfiler.csproj.GenerateResource.cache
