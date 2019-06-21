@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29009.5
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF6WithMiniProfiler", "EF6WithMiniProfiler\EF6WithMiniProfiler.csproj", "{B5DDD566-5AEB-4EF6-AE72-9688A023E4E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCoreWithMiniProfiler", "EFCoreWithMiniProfiler\EFCoreWithMiniProfiler.csproj", "{EE0D4AFA-E8DA-4123-8116-56595F9E6002}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B5DDD566-5AEB-4EF6-AE72-9688A023E4E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5DDD566-5AEB-4EF6-AE72-9688A023E4E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5DDD566-5AEB-4EF6-AE72-9688A023E4E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE0D4AFA-E8DA-4123-8116-56595F9E6002}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE0D4AFA-E8DA-4123-8116-56595F9E6002}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE0D4AFA-E8DA-4123-8116-56595F9E6002}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE0D4AFA-E8DA-4123-8116-56595F9E6002}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

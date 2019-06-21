@@ -1,2 +1,4 @@
 /packages 
 /.vs
+/EF6WithMiniProfiler/bin
+/EF6WithMiniProfiler/obj
