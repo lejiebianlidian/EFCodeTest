@@ -14,7 +14,7 @@ namespace EF6WithMiniProfiler.Models
     /// 同样需要在Bolg类中添加一个BlogDetail属性
     /// </summary>
 
-    [ComplexType]
+    //[ComplexType]
     public class BlogDetail
     {
         [Key]

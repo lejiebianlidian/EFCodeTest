@@ -1,6 +1,8 @@
 ﻿<!DOCTYPE html>
 <html>
+@using StackExchange.Profiling.Mvc
 @using StackExchange.Profiling
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
@@ -42,9 +44,8 @@
     @RenderSection("scripts", required: false)
 
     @*新版本的需要加这段代码*@
-    @MiniProfiler.Current.RenderIncludes()
+    @MiniProfiler.Current.RenderIncludes(position: RenderPosition.Left, showTrivial: false, showTimeWithChildren: true)
+    @*@(MiniProfiler.Current.RenderIncludes())*@
 
-    @*老版本的需要添加这段代码.(仅适用于老版本)*@
-    @*@StackExchange.Profiling.MiniProfiler.RenderIncludes()*@
 </body>
 </html>

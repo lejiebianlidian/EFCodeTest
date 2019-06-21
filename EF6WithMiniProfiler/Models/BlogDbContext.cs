@@ -13,12 +13,20 @@ namespace EF6WithMiniProfiler.Models
 
         }
         public virtual DbSet<Blog> Blogs { get; set; }
+
         public virtual DbSet<Post> Posts { get; set; }
+
         public virtual DbSet<BlogDetail> BlogDetails { get; set; }
+
         public virtual DbSet<Comment> Comments { get; set; }
+
         public virtual DbSet<Passport> Passports { get; set; }
+
         public virtual DbSet<PassportStamp> PassportStamps { get; set; }
+
         public virtual DbSet<Person> Persons { get; set; }
+
+        public virtual DbSet<Department> Departments { get; set; }
 
 
     }

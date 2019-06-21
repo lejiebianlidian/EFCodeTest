@@ -1,6 +1,11 @@
 using StackExchange.Profiling;
 using StackExchange.Profiling.EntityFramework6;
+using StackExchange.Profiling.Mvc;
+using StackExchange.Profiling.Storage;
 using System;
+using System.Data.SQLite;
+using System.IO;
+using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
@@ -9,36 +14,55 @@ namespace EF6WithMiniProfiler
 {
     public class MvcApplication : System.Web.HttpApplication
     {
+        /// <summary>
+        /// Gets the connection string.
+        /// </summary>
+        public static string ConnectionString => "FullUri=file::memory:?cache=shared";
+        private static readonly SQLiteConnection TrapConnection = new SQLiteConnection(ConnectionString);
+
         protected void Application_Start()
         {
-
 
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-#if DEBUG
-            MiniProfilerEF6.Initialize();
-#endif
+
+            MiniProfiler.Configure(new MiniProfilerOptions().AddViewProfiling());//MiniProfiler默认设置
+            MiniProfilerEF6.Initialize();//配置EF分析
+
         }
 
-        protected void Application_BeginRequest(object source, EventArgs args)
+        /// <summary>
+        /// 新增加Application_BeginRequest方法，添加MiniProfiler启动方法
+        /// </summary>
+        protected void Application_BeginRequest()
         {
-#if DEBUG
+            MiniProfiler profiler = null;
+
+
             if (Request.IsLocal)
             {
-                MiniProfiler.StartNew();
+                profiler = MiniProfiler.StartNew();
 
             }
-#endif
+            using (profiler.Step("Application_BeginRequest"))
+            {
+                //Todo
+            }
+
         }
 
+        /// <summary>
+        /// 新增加Application_EndRequest方法，添加MiniProfiler停止方法
+        /// </summary>
         protected void Application_EndRequest()
         {
-#if DEBUG
-            MiniProfiler.Current?.Stop();//
-#endif
+
+            MiniProfiler.Current?.Stop();
+
         }
+
 
     }
 }
